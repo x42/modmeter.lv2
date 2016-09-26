@@ -30,7 +30,7 @@
     position:absolute;
     right:0;
     text-align:center;
-    top:190px;
+    top:195px;
 }
 
 .x42-modmeter{{{cns}}} .x42-brand h1 {
@@ -67,7 +67,7 @@
     left:10px;
     position:absolute;
     right:10px;
-    bottom:140px;
+    bottom:135px;
 }
 
 /* = FOOTSWITCH
@@ -91,18 +91,23 @@
 ================================================ */
 .x42-modmeter{{{cns}}} .mod-control-group {
     margin:10px !important;
+    margin:0px 20px 10px 20px !important;
     position:relative;
     text-align:center;
     z-index:30;
 }
 
 .x42-modmeter{{{cns}}} .mod-display-group {
-    margin:20px !important;
+    background-color:#ccaa66;
+    margin:20px 30px 0 30px !important;
     position:relative;
     text-align:center;
     z-index:30;
+    color:black;
+    box-shadow: 2px 2px 2px 0px #000 inset, -1px -1px 1px 1px #888 inset;
 }
 
+.x42-modmeter{{{cns}}} .mod-control-group div,
 .x42-modmeter{{{cns}}} .mod-display-group div {
     padding:0;
     line-height:1.25em;
@@ -117,6 +122,22 @@
     text-align:right;
 }
 
+.x42-modmeter{{{cns}}} .mod-control-group > span.mod-knob-title {
+    bottom:0px;
+    display:block;
+    font-size:11px;
+    font-weight:bold;
+    height:12px;
+    left:0;
+    line-height:1;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    right:0;
+    text-transform:uppercase;
+}
+
 /* = Push Buttons
 ================================================ */
 .x42-modmeter{{{cns}}} .mod-pushbutton {
@@ -128,7 +149,6 @@
     height:44px;
     margin: 4px auto 0 auto;
     width: 44px;
-    display:inline-block
 }
 
 .x42-modmeter{{{cns}}} .mod-pushbutton.on {
