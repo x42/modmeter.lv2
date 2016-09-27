@@ -1,6 +1,10 @@
 modmeter.lv2 - Audio Level Meter for the MOD
 ============================================
 
+A simple audio meter with numeric display for http://moddevices.com/
+constsing of a Digital Peak Meter with 15dB/sec falloff with user-resettable
+peak-hold and a RMS loudness meter (600ms)
+
 Install
 -------
 

@@ -48,7 +48,7 @@ targets+=$(BUILDDIR)$(LV2NAME)$(LIB_EXT)
 
 ifneq ($(MOD),)
   targets+=$(BUILDDIR)modgui
-  MODLABEL=mod:label \"MOD Meter\";
+  MODLABEL=mod:label \"Level Meter\";
   MODBRAND=mod:brand \"x42\";
 else
   MODLABEL=

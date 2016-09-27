@@ -8,6 +8,6 @@
         modgui:thumbnail <modgui/thumbnail-@LV2NAME@.png> ;
         modgui:javascript <modgui/script-@LV2NAME@.js> ;
         modgui:brand "x42" ;
-        modgui:label "MOD Meter" ;
+        modgui:label "Level Meter" ;
         modgui:monitoredOutputs [ lv2:symbol "level" ] , [ lv2:symbol "peak" ] , [ lv2:symbol "rms" ] ;
     ] .

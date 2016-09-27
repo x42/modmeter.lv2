@@ -19,11 +19,11 @@
 	a lv2:Plugin, doap:Project, lv2:UtilityPlugin;
 	doap:license <http://usefulinc.com/doap/licenses/gpl>;
 	doap:maintainer <http://gareus.org/rgareus#me>;
-	doap:name "MOD Meter";
+	doap:name "Level Meter";
 	@VERSION@
 	lv2:optionalFeature lv2:hardRTCapable;
 	lv2:requiredFeature urid:map;
-	rdfs:comment "Audio Signal Level Meter";
+	rdfs:comment "Numeric Audio Signal Level Meter (DPM with 15dB/sec falloff + RMS meter)";
 
 	@MODBRAND@
 	@MODLABEL@
