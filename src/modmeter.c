@@ -133,17 +133,26 @@ run (LV2_Handle instance, uint32_t n_samples)
 
 	self->meter_level = l;
 	self->peak_level  = p;
-	self->rms_level     = r;
+	self->rms_level   = r;
 
 #ifdef THROTTLE
 	float db_lvl = l > 1e-6f  ? 20.f * log10f (l) : -120;
 	float db_rms = r > 1e-12f ? 10.f * log10f (r) : -120;
 
-	if ( fabsf (db_lvl - self->db_lvl) > .2) {
+	if (db_lvl == -120 && self->db_lvl != -120) {
+		*self->ports[P_LEVEL] = 0;
+		self->db_lvl = db_lvl;
+	}
+	else if (fabsf (db_lvl - self->db_lvl) > .2) {
 		*self->ports[P_LEVEL] = l;
 		self->db_lvl = db_lvl;
 	}
-	if ( fabsf (db_rms - self->db_rms) > .2) {
+
+	if (db_rms == -120 && self->db_rms != -120) {
+		*self->ports[P_RMS] = 0;
+		self->db_rms = db_rms;
+	}
+	else if (fabsf (db_rms - self->db_rms) > .2) {
 		*self->ports[P_RMS] = sqrtf (r);
 		self->db_rms = db_rms;
 	}
