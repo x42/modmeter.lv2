@@ -87,6 +87,10 @@
     width: 66px;
 }
 
+.x42-modmeter{{{cns}}} .mod-footswitch.on {
+    background-position: top center !important;
+}
+
 /* = Layout
 ================================================ */
 .x42-modmeter{{{cns}}} .mod-control-group {
