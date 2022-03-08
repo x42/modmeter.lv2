@@ -23,7 +23,11 @@
 	@VERSION@
 	lv2:optionalFeature lv2:hardRTCapable;
 	lv2:requiredFeature urid:map;
-	rdfs:comment "Numeric Audio Signal Level Meter (DPM with 15dB/sec falloff + RMS meter)";
+	rdfs:comment """The x42 Level Meter is a numeric audio signal level meter with a 15dB/sec falloff rate.
+You can use it to analyse the level of an audio signal by keeping an eye on the RMS, Peak and Hold values.
+Hold stores the highest Peak level that has been measured. There is a Reset control which resets the Hold value.
+It is particularly useful for inspecting your signal chain at multiple points, to understand more about what signal levels work best for particular plugins.
+""";
 
 	@MODBRAND@
 	@MODLABEL@
