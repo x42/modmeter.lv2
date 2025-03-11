@@ -27,7 +27,11 @@
 #include <stdbool.h>
 #include <math.h>
 
+#if defined(__has_include) && __has_include(<lv2/core/lv2.h>)
+#include <lv2/core/lv2.h>
+#else
 #include <lv2/lv2plug.in/ns/lv2core/lv2.h>
+#endif
 
 #define THROTTLE // MOD output port event throttle
 
