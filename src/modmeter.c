@@ -101,7 +101,7 @@ run (LV2_Handle instance, uint32_t n_samples)
 	ModMeter* self = (ModMeter*)instance;
 
 	if (*self->ports[P_RESET] > 0 && !self->c_reset) {
-		self->peak_level = 0;
+		self->meter_level = self->peak_level = self->rms_level = 0;
 	}
 	self->c_reset = *self->ports[P_RESET] > 0;
 
